@@ -136,7 +136,12 @@ class Reproductor:
                 self.play_audio()
         
             time.sleep(0.1)
-        mixer.quit()
+            
+        if self.queue[self.cursor + 1] is None:
+            mixer.quit()
+        else:
+            self.cursor = (self.cursor + 1) % len(self.queue)
+            self.play_audio()
         
 def main():
     rep = Reproductor()
