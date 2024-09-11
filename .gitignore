@@ -1,5 +1,11 @@
+# Folder cache
+Music/
+
 # program Extern
 ffmpeg/
+
+# debuggin file
+json.json
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
